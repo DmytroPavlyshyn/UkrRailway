@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6997d70d-009e-4e7d-b0a8-a136ca9cdac9" name="Default Changelist" comment="replace Date to LocalDateTime">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+            <state relative-caret-position="296">
+              <caret line="74" column="64" lean-forward="true" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,7 +248,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544128590585" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544128893367" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -513,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="296">
+          <caret line="74" column="64" lean-forward="true" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
