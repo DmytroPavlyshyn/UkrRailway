@@ -3,7 +3,7 @@ package com.alpha;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Carriage {
+public class Carriage {         //Вагон
     private int id = count++;
     private static int count = 1;
     private int capacity;
