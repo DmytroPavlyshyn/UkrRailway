@@ -13,4 +13,16 @@ public class TrainStop {
         this.arrivalTime = arrivalTime;
         this.departureTime = departureTime;
     }
+
+    public String getStationName() {
+        return stationName;
+    }
+
+    public LocalDateTime getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public LocalDateTime getDepartureTime() {
+        return departureTime;
+    }
 }

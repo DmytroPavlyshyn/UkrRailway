@@ -17,5 +17,26 @@ public class Carriage {
             places.add(new Place());
         }
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public List<Place> getPlaces() {
+        return places;
+    }
+
+    @Override
+    public String toString() {
+        return "Carriage{" +
+                "id=" + id +
+                ", capacity=" + capacity +
+                ", places=" + places +
+                '}';
+    }
 }
 

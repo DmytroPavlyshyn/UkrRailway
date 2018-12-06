@@ -9,4 +9,11 @@ public class Train {
     public Train(List<Carriage> carriages) {
         this.carriages = carriages;
     }
+    public int getGeneralCapacity(){
+        int capacity = 0;
+        for(Carriage carriage: carriages){
+            capacity+=carriage.getCapacity();
+        }
+        return capacity;
+    }
 }
