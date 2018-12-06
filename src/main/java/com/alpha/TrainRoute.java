@@ -37,4 +37,14 @@ public class TrainRoute {
         }
         return -1;
     }
+
+    @Override
+    public String toString() {
+        return "TrainRoute{" +
+                "train=" + train +
+                ", trainStops=" + trainStops +
+                ", tickets=" + tickets +
+                '}';
+    }
 }
+

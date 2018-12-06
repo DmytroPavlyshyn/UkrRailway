@@ -25,4 +25,13 @@ public class TrainStop {
     public LocalDateTime getDepartureTime() {
         return departureTime;
     }
+
+    @Override
+    public String toString() {
+        return "TrainStop{" +
+                "stationName='" + stationName + '\'' +
+                ", arrivalTime=" + arrivalTime +
+                ", departureTime=" + departureTime +
+                '}';
+    }
 }

@@ -6,4 +6,11 @@ public class Place {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Place{" +
+                "id=" + id +
+                '}';
+    }
 }

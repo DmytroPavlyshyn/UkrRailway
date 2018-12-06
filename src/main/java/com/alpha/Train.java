@@ -16,4 +16,16 @@ public class Train {
         }
         return capacity;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Train{" +
+                "id=" + id +
+                ", carriages=" + carriages +
+                '}';
+    }
 }

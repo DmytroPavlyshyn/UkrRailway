@@ -28,20 +28,15 @@ public class Ticket2 {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Ticket2)) return false;
-        Ticket2 ticket = (Ticket2) o;
-        return trainId == ticket.trainId &&
-                carriageId == ticket.carriageId &&
-                idPlace == ticket.idPlace &&
-                Objects.equals(date, ticket.date) &&
-                Objects.equals(firstName, ticket.firstName) &&
-                Objects.equals(lastName, ticket.lastName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(date, firstName, lastName, trainId, carriageId, idPlace);
+    public String toString() {
+        return "Ticket{" +
+                "date=" + date +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", trainId=" + trainId +
+                ", carriageId=" + carriageId +
+                ", idPlace=" + idPlace +
+                ", personalRoute=" + personalRoute +
+                '}';
     }
 }
