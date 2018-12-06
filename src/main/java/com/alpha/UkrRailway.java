@@ -1,6 +1,6 @@
 package com.alpha;
 
-import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,8 +14,12 @@ public class UkrRailway {
                             {
                                 add(new Carriage(4));
                         }}
-                ),new Date(2018,1,2),new ArrayList<TrainStop>(){
-                  //  {add(new TrainStop("Lviv",new Date(2018,12,6)))}
+                ),LocalDateTime.now().minusMinutes(14),new ArrayList<TrainStop>(){
+                    {add(new TrainStop("Lviv", LocalDateTime.now(),LocalDateTime.now().plusMinutes(15)));}
                 }));
+    }
+
+    public static void main(String[] args) {
+        UkrRailway ukrRailway = new UkrRailway();
     }
 }

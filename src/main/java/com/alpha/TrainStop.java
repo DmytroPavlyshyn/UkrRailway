@@ -1,13 +1,14 @@
 package com.alpha;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class TrainStop {
     private String stationName;
-    private Date arrivalTime;
-    private Date departureTime;
+    private LocalDateTime arrivalTime;
+    private LocalDateTime departureTime;
 
-    public TrainStop(String stationName, Date arrivalTime, Date departureTime) {
+    public TrainStop(String stationName, LocalDateTime arrivalTime, LocalDateTime departureTime) {
         this.stationName = stationName;
         this.arrivalTime = arrivalTime;
         this.departureTime = departureTime;

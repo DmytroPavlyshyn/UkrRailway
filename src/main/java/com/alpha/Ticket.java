@@ -1,9 +1,9 @@
 package com.alpha;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Ticket {
-    private Date date;
+    private LocalDateTime date;
     private String firstName;
     private String lastName;
     private int trainId;
