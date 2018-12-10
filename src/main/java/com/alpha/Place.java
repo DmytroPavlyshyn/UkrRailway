@@ -1,8 +1,12 @@
 package com.alpha;
 
 public class Place {
-    private int id = count++;
-    private static int count = 1;
+    private int id;
+
+    public Place(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

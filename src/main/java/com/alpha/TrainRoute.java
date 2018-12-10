@@ -6,12 +6,12 @@ import java.util.*;
 public class TrainRoute {
     private Train train;
     private List<TrainStop> trainStops;
-    private List<Ticket2> tickets;
+    private List<Ticket> tickets;
 
     public TrainRoute(Train train, ArrayList<TrainStop> trainStops) {
         this.train = train;
         this.trainStops = trainStops;
-        tickets = new ArrayList<Ticket2>();
+        tickets = new ArrayList<Ticket>();
     }
 
     public Train getTrain() {
@@ -26,7 +26,7 @@ public class TrainRoute {
         return trainStops;
     }
 
-    public List<Ticket2> getTickets() {
+    public List<Ticket> getTickets() {
         return tickets;
     }
     public int findIndexOfTrainStopByName(String name){
@@ -41,10 +41,10 @@ public class TrainRoute {
     @Override
     public String toString() {
         return "TrainRoute{" +
-                "train=" + train +
-                ", trainStops=" + trainStops +
-                ", tickets=" + tickets +
-                '}';
+                "train: \n" + train +
+                ", trainStops: \n" + trainStops +
+                ", tickets: \n" + tickets +
+                "}\n";
     }
 }
 

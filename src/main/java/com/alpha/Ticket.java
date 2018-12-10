@@ -1,6 +1,7 @@
 package com.alpha;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Objects;
 
 public class Ticket {
@@ -10,34 +11,84 @@ public class Ticket {
     private int trainId;
     private int carriageId;
     private int idPlace;
-    private TrainStop start;
-    private TrainStop end;
+    private List<TrainStop> personalRoute;
 
-    public TrainStop getStart() {
-        return start;
+    public Ticket(LocalDateTime date, String firstName, String lastName, int trainId, int carriageId, int idPlace, List<TrainStop> personalRoute) {
+        this.date = date;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.trainId = trainId;
+        this.carriageId = carriageId;
+        this.idPlace = idPlace;
+        this.personalRoute = personalRoute;
     }
 
-    public TrainStop getEnd() {
-        return end;
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getTrainId() {
+        return trainId;
+    }
+
+    public void setTrainId(int trainId) {
+        this.trainId = trainId;
+    }
+
+    public int getCarriageId() {
+        return carriageId;
+    }
+
+    public void setCarriageId(int carriageId) {
+        this.carriageId = carriageId;
+    }
+
+    public int getIdPlace() {
+        return idPlace;
+    }
+
+    public void setIdPlace(int idPlace) {
+        this.idPlace = idPlace;
+    }
+
+    public List<TrainStop> getPersonalRoute() {
+        return personalRoute;
+    }
+
+    public void setPersonalRoute(List<TrainStop> personalRoute) {
+        this.personalRoute = personalRoute;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Ticket)) return false;
-        Ticket ticket = (Ticket) o;
-        return trainId == ticket.trainId &&
-                carriageId == ticket.carriageId &&
-                idPlace == ticket.idPlace &&
-                Objects.equals(date, ticket.date) &&
-                Objects.equals(firstName, ticket.firstName) &&
-                Objects.equals(lastName, ticket.lastName) &&
-                Objects.equals(start, ticket.start) &&
-                Objects.equals(end, ticket.end);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(date, firstName, lastName, trainId, carriageId, idPlace, start, end);
+    public String toString() {
+        return "Ticket{" +
+                "date=" + date +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", trainId=" + trainId +
+                ", carriageId=" + carriageId +
+                ", idPlace=" + idPlace +
+                ", personalRoute=" + personalRoute +
+                "}\n";
     }
 }
