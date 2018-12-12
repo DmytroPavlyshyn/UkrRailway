@@ -1,41 +1,34 @@
 package com.alpha;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Carriage {
     private int id;
+    private CarriageType carriageType;
     private int capacity;
-    private List<Place> places;
 
-    public Carriage(int id,int capacity) {
+
+    public Carriage(int id, CarriageType carriageType, int capacity) {
+        this.id = id;
+        this.carriageType = carriageType;
         this.capacity = capacity;
-        places = new ArrayList<>();
-
-        for (int i = 1; i <= capacity; i++) {
-            places.add(new Place(i));
-        }
     }
 
     public int getId() {
         return id;
     }
 
+    public CarriageType getCarriageType() {
+        return carriageType;
+    }
+
     public int getCapacity() {
         return capacity;
     }
 
-    public List<Place> getPlaces() {
-        return places;
-    }
-
     @Override
     public String toString() {
-        return "Carriage{" +
-                "id=" + id +
-                ", capacity=" + capacity +
-                ", places=" + places +
-                "}\n";
+        return "Carriage: " +this.id + "type: " + this.carriageType;
     }
 }
 
