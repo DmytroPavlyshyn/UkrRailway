@@ -28,7 +28,7 @@ public class Carriage {
 
     @Override
     public String toString() {
-        return "Carriage: " +this.id + "type: " + this.carriageType;
+        return "Carriage: " + this.id + "type: " + this.carriageType;
     }
 }
 

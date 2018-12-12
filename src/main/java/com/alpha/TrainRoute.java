@@ -4,24 +4,52 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class TrainRoute {
-    private Train train;
+    private int id;
+    private List<Carriage> carriages;
     private List<TrainStop> trainStops;
-    private List<Ticket> tickets;
+    private List<Ticket> tickets = new ArrayList<>();
 
-    public TrainRoute(Train train, ArrayList<TrainStop> trainStops) {
-        this.train = train;
+    public TrainRoute(int id, List<Carriage> carriages, List<TrainStop> trainStops) {
+        this.id = id;
+        this.carriages = carriages;
         this.trainStops = trainStops;
-        tickets = new ArrayList<Ticket>();
     }
 
-    public Train getTrain() {
-        return train;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public List<Carriage> getCarriages() {
+        return carriages;
+    }
+
+    public void setCarriages(List<Carriage> carriages) {
+        this.carriages = carriages;
+    }
+
+    public void setTrainStops(List<TrainStop> trainStops) {
+        this.trainStops = trainStops;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
     }
 
     public LocalDateTime getDepatureDate() {
         return trainStops.get(0).getDepartureTime();
     }
 
+    public int getGeneralCapacity() {
+        int capacity = 0;
+        for (Carriage carriage : carriages) {
+            capacity += carriage.getCapacity();
+        }
+        return capacity;
+    }
     public List<TrainStop> getTrainStops() {
         return trainStops;
     }
@@ -40,11 +68,12 @@ public class TrainRoute {
 
     @Override
     public String toString() {
-        return "TrainRoute{" +
-                "train: \n" + train +
-                ", trainStops: \n" + trainStops +
-                ", tickets: \n" + tickets +
-                "}\n";
+        return "\nTrainRoute{" +
+                "id=" + id +
+                ", carriages=" + carriages +
+                ", trainStops=" + trainStops +
+                ", tickets=" + tickets +
+                '}';
     }
 }
 

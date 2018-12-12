@@ -21,9 +21,9 @@ public class UkrRailway {
 
     {
         trainRoutes.add(new TrainRoute(
-                new Train(12, new ArrayList<Carriage>() {{
+                12, new ArrayList<Carriage>() {{
                     add(new Carriage(1, CarriageType.COMPARATMENT, 4));
-                }}), trainStops));
+                }}, trainStops));
 
 
     }
@@ -41,7 +41,7 @@ public class UkrRailway {
             if (fromIndex >= toIndex) {
                 continue;
             }
-            int generalCapacity = trainRoute.getTrain().getGeneralCapacity();
+            int generalCapacity = trainRoute.getGeneralCapacity();
             List<TrainStop> tempRoute = TrainStop.subListStop(trainRoute.getTrainStops(), from, to);
             boolean isFull = false;
             for (TrainStop trainStop : tempRoute) {//trainRoute.getTrainStops()) {
@@ -98,11 +98,11 @@ public class UkrRailway {
     }
 
     private Carriage chooseCarriage(TrainRoute trainRoute) {
-        for (Carriage carriage : trainRoute.getTrain().getCarriages()) {
+        for (Carriage carriage : trainRoute.getCarriages()) {
             System.out.println(carriage);
         }
         int choice = scanner.nextInt();
-        for (Carriage carriage : trainRoute.getTrain().getCarriages()) {
+        for (Carriage carriage : trainRoute.getCarriages()) {
             if (carriage.getId() == choice) {
                 return carriage;
             }
@@ -152,7 +152,7 @@ public class UkrRailway {
                 localDateTime,
                 firstName,
                 lastName,
-                shortestRoute.getTrain().getId(),
+                shortestRoute.getId(),
                 chosenCarriage.getId(),
                 choosePlace(chosenCarriage, shortestRoute, from, to),
                 new ArrayList<TrainStop>() {{
@@ -170,7 +170,7 @@ public class UkrRailway {
                 localDateTime,
                 firstName,
                 lastName,
-                trainRoute.getTrain().getId(),
+                trainRoute.getId(),
                 chosenCarriage.getId(),
                 choosePlace(chosenCarriage, trainRoute, from, to),
                 new ArrayList<TrainStop>() {{
