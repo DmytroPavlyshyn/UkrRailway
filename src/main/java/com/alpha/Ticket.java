@@ -2,7 +2,7 @@ package com.alpha;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
+
 
 public class Ticket {
     private LocalDateTime date;

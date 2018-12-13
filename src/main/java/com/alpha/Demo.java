@@ -2,7 +2,7 @@ package com.alpha;
 
 import java.time.LocalDateTime;
 import java.util.*;
-public class Demo {
+public class Demo { //якщо тут запускати то треба вводити все вручну
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
