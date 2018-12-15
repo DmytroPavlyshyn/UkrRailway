@@ -74,7 +74,7 @@ public class UkrRailway {
         return carriages;
     }
 
-    List<TrainRoute> getAvailableARoutes(String from, String to, LocalDateTime dapatureTime) {
+    List<TrainRoute> getAvailableRoutes(String from, String to, LocalDateTime dapatureTime) {
         List<TrainRoute> AvailableTrainRoutes = new ArrayList<>();
         for (TrainRoute trainRoute : trainRoutes) {
 
@@ -93,14 +93,14 @@ public class UkrRailway {
             for (TrainStop trainStop : tempRoute) {
                 int oneStopCapacity = 0;
                 for (Ticket ticket : trainRoute.getTickets()) {
+
+
+                    if (ticket.getPersonalRoute().subList(0, ticket.getPersonalRoute().size() - 1).contains(trainStop)) {
+                        oneStopCapacity++;
+                    }
                     if (oneStopCapacity == generalCapacity) {
                         isFull = true;
                     }
-
-                    if (ticket.getPersonalRoute().subList(0, ticket.getPersonalRoute().size() - 2).contains(trainStop)) {
-                        oneStopCapacity++;
-                    }
-
                 }
 
             }
@@ -113,7 +113,7 @@ public class UkrRailway {
 
     TrainRoute getShortestRoute(String from, String to, LocalDateTime localDateTime) {
         try {
-            List<TrainRoute> availableRoutes = getAvailableARoutes(from, to, localDateTime);
+            List<TrainRoute> availableRoutes = getAvailableRoutes(from, to, localDateTime);
 
             TrainRoute shortestRoute = null;
             int minimalDistance = -1;
@@ -138,14 +138,7 @@ public class UkrRailway {
     }
 
     Carriage chooseCarriage(TrainRoute trainRoute, String from, String to) {
-        List<Carriage> carriages = getAvailableCarriages(trainRoute, from, to);/*new ArrayList<>();
-        for (Carriage carriage : trainRoute.getCarriages()) {
-            if(getAvailablePlaces(carriage,trainRoute,from,to).isEmpty()){
-                continue;
-            }
-            carriages.add(carriage);
-            System.out.println(carriage);
-        }*/
+        List<Carriage> carriages = getAvailableCarriages(trainRoute, from, to);
         if (carriages.isEmpty()) {
             throw new RuntimeException("There\'s no available carriages");
         }
@@ -200,7 +193,7 @@ public class UkrRailway {
     }
 
     void buyTicket(String from, String to, LocalDateTime localDateTime, String firstName, String lastName, TrainRoute trainRoute, Carriage carriage, int placeId) {
-        List<TrainRoute> availableRoutes = getAvailableARoutes(from, to, localDateTime);
+        List<TrainRoute> availableRoutes = getAvailableRoutes(from, to, localDateTime);
         if (availableRoutes.isEmpty() || !availableRoutes.contains(trainRoute)) {
             throw new RuntimeException("There\'s no available  routes");
         }
