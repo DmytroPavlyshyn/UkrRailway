@@ -12,7 +12,7 @@ public class Demo { //якщо тут запускати то треба вво�
 //        boolean isEmpty;
 //        while (true) {
 //            try {
-//                ukrRailway.showRoute();
+//                ukrRailway.showRoutes();
 //                System.out.println("Enter month: ");
 //                Integer month = scanner.nextInt();
 //                System.out.println("Enter day");
@@ -28,7 +28,7 @@ public class Demo { //якщо тут запускати то треба вво�
 //                String firstName = scanner.nextLine();
 //                System.out.println("Enter last name: ");
 //                String lastName = scanner.nextLine();
-//                System.out.println(ukrRailway.findShortestRoute(from,to,LocalDateTime.of(2018, month, day, hour, 0)));
+//                System.out.println(ukrRailway.getShortestRoute(from,to,LocalDateTime.of(2018, month, day, hour, 0)));
 //                ukrRailway.buyTicket(from, to, LocalDateTime.of(2018, month, day, hour, 0), firstName, lastName);
 //
 //            }catch (Exception e){

@@ -10,17 +10,17 @@ public class Ticket {
     private LocalDateTime date;
     private String firstName;
     private String lastName;
-    private int trainId;
+    private int trainRouteId;
     private int carriageId;
     private int idPlace;
     private List<TrainStop> personalRoute;
 
 
-    public Ticket(LocalDateTime date, String firstName, String lastName, int trainId, int carriageId, int idPlace, List<TrainStop> personalRoute) {
+    public Ticket(LocalDateTime date, String firstName, String lastName, int trainRouteId, int carriageId, int idPlace, List<TrainStop> personalRoute) {
         this.date = date;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.trainId = trainId;
+        this.trainRouteId = trainRouteId;
         this.carriageId = carriageId;
         this.idPlace = idPlace;
         this.personalRoute = personalRoute;
@@ -50,12 +50,12 @@ public class Ticket {
         this.lastName = lastName;
     }
 
-    public int getTrainId() {
-        return trainId;
+    public int getTrainRouteId() {
+        return trainRouteId;
     }
 
-    public void setTrainId(int trainId) {
-        this.trainId = trainId;
+    public void setTrainRouteId(int trainRouteId) {
+        this.trainRouteId = trainRouteId;
     }
 
     public int getCarriageId() {
@@ -86,12 +86,12 @@ public class Ticket {
     public String toString() {
         return "Ticket{" +
                 "date=" + date +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", trainId=" + trainId +
-                ", carriageId=" + carriageId +
-                ", idPlace=" + idPlace +
-                ", personalRoute=" + personalRoute +
+                ", \nfirstName='" + firstName + '\'' +
+                ", \nlastName='" + lastName + '\'' +
+                ", \ntrainRouteId=" + trainRouteId +
+                ", \ncarriageId=" + carriageId +
+                ", \nidPlace=" + idPlace +
+                ", \npersonalRoute=" + personalRoute +
                 "}\n";
     }
 
@@ -100,7 +100,7 @@ public class Ticket {
         if (this == o) return true;
         if (!(o instanceof Ticket)) return false;
         Ticket ticket = (Ticket) o;
-        return getTrainId() == ticket.getTrainId() &&
+        return getTrainRouteId() == ticket.getTrainRouteId() &&
                 getCarriageId() == ticket.getCarriageId() &&
                 getIdPlace() == ticket.getIdPlace() &&
                 Objects.equals(object, ticket.object) &&
@@ -112,6 +112,6 @@ public class Ticket {
 
     @Override
     public int hashCode() {
-        return Objects.hash(object, getDate(), getFirstName(), getLastName(), getTrainId(), getCarriageId(), getIdPlace(), getPersonalRoute());
+        return Objects.hash(object, getDate(), getFirstName(), getLastName(), getTrainRouteId(), getCarriageId(), getIdPlace(), getPersonalRoute());
     }
 }

@@ -15,19 +15,7 @@ public class TrainStop {
         this.departureTime = departureTime;
     }
 
-    public String getStationName() {
-        return stationName;
-    }
-
-    public LocalDateTime getArrivalTime() {
-        return arrivalTime;
-    }
-
-    public LocalDateTime getDepartureTime() {
-        return departureTime;
-    }
-
-   public static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
+    public static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
         for (TrainStop trainStop : trainStops) {
             if (trainStop.getStationName().equals(stopName)) {
                 return trainStop;
@@ -43,6 +31,18 @@ public class TrainStop {
             throw new RuntimeException("There\'s no  sublist of stops from " + from + " to " + to);
         }
         return trains.subList(trains.indexOf(fromTrainStop), trains.indexOf(toTrainStop) + 1);
+    }
+
+    public String getStationName() {
+        return stationName;
+    }
+
+    public LocalDateTime getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public LocalDateTime getDepartureTime() {
+        return departureTime;
     }
 
     @Override

@@ -14,19 +14,67 @@ public class UkrRailway {
         this.trainRoutes = trainRoutes;
     }
 
-    public List<TrainRoute> getTrainRoutes() {
+    TrainRoute getTrainRouteById(int id) {
+        for (TrainRoute trainRoute : trainRoutes) {
+            if (id == trainRoute.getId()) {
+                return trainRoute;
+            }
+        }
+        return null;
+    }
+    Carriage getCarriageById(TrainRoute trainRoute, int id){
+        for(Carriage carriage: trainRoute.getCarriages()){
+            if(carriage.getId() == id){
+                return carriage;
+            }
+        }
+        return null;
+    }
+
+    List<TrainRoute> getTrainRoutes() {
         return trainRoutes;
     }
 
-    public void setTrainRoutes(List<TrainRoute> trainRoutes) {
-        this.trainRoutes = trainRoutes;
-    }
-
-    public void showRoute() {
+    public void showRoutes() {
         System.out.println(trainRoutes);
     }
 
-    public List<TrainRoute> findAvailableARoutes(String from, String to, LocalDateTime dapatureTime) {
+    List<Integer> getAvailablePlaces(Carriage carriage, TrainRoute route, String from, String to) {
+        List<TrainStop> personalRoute = subListStop(route.getTrainStops(), from, to);
+        List<Integer> availablePlaces = new ArrayList<>();
+        for (int placeNumber = 1; placeNumber <= carriage.getCapacity(); placeNumber++) {
+            boolean isAvailable = true;
+            for (TrainStop trainStop : personalRoute) {
+                for (Ticket ticket : route.getTickets()) {
+
+                    if ((trainStop.equals(personalRoute.get(0)) && trainStop.equals(ticket.getPersonalRoute().get(ticket.getPersonalRoute().size() - 1))) ||
+                            (trainStop.equals(personalRoute.get(personalRoute.size() - 1)) && trainStop.equals(ticket.getPersonalRoute().get(0)))) {
+                        continue;
+                    }
+                    if (carriage.getId() == ticket.getCarriageId() && placeNumber == ticket.getIdPlace() && ticket.getPersonalRoute().contains(trainStop)) {
+                        isAvailable = false;
+                    }
+                }
+            }
+            if (isAvailable) {
+                availablePlaces.add(placeNumber);
+            }
+        }
+        return availablePlaces;
+    }
+
+    List<Carriage> getAvailableCarriages(TrainRoute trainRoute, String from, String to) {
+        List<Carriage> carriages = new ArrayList<>();
+        for (Carriage carriage : trainRoute.getCarriages()) {
+            if (getAvailablePlaces(carriage, trainRoute, from, to).isEmpty()) {
+                continue;
+            }
+            carriages.add(carriage);
+        }
+        return carriages;
+    }
+
+    List<TrainRoute> getAvailableARoutes(String from, String to, LocalDateTime dapatureTime) {
         List<TrainRoute> AvailableTrainRoutes = new ArrayList<>();
         for (TrainRoute trainRoute : trainRoutes) {
 
@@ -63,9 +111,9 @@ public class UkrRailway {
         return AvailableTrainRoutes;
     }
 
-    public TrainRoute findShortestRoute(String from, String to, LocalDateTime localDateTime) {
+    TrainRoute getShortestRoute(String from, String to, LocalDateTime localDateTime) {
         try {
-            List<TrainRoute> availableRoutes = findAvailableARoutes(from, to, localDateTime);
+            List<TrainRoute> availableRoutes = getAvailableARoutes(from, to, localDateTime);
 
             TrainRoute shortestRoute = null;
             int minimalDistance = -1;
@@ -89,7 +137,7 @@ public class UkrRailway {
         }
     }
 
-    private Carriage chooseCarriage(TrainRoute trainRoute, String from, String to) {
+    Carriage chooseCarriage(TrainRoute trainRoute, String from, String to) {
         List<Carriage> carriages = getAvailableCarriages(trainRoute, from, to);/*new ArrayList<>();
         for (Carriage carriage : trainRoute.getCarriages()) {
             if(getAvailablePlaces(carriage,trainRoute,from,to).isEmpty()){
@@ -111,7 +159,7 @@ public class UkrRailway {
         throw new RuntimeException("There\'s no such an carriage");
     }
 
-    private Integer choosePlace(Carriage carriage, TrainRoute route, String from, String to) {
+    Integer choosePlace(Carriage carriage, TrainRoute route, String from, String to) {
         List<Integer> availablePlaces = getAvailablePlaces(carriage, route, from, to);
         if (availablePlaces.isEmpty()) {
             throw new RuntimeException("There\'s no  available places");
@@ -129,7 +177,7 @@ public class UkrRailway {
     void buyTicket(String from, String to, LocalDateTime localDateTime, String firstName, String lastName) {
         try {
 
-            TrainRoute shortestRoute = findShortestRoute(from, to, localDateTime);
+            TrainRoute shortestRoute = getShortestRoute(from, to, localDateTime);
 
             Carriage chosenCarriage = chooseCarriage(shortestRoute, from, to);
             int chosenPlace = choosePlace(chosenCarriage, shortestRoute, from, to);
@@ -151,43 +199,8 @@ public class UkrRailway {
         }
     }
 
-    private List<Carriage> getAvailableCarriages(TrainRoute trainRoute, String from, String to) {
-        List<Carriage> carriages = new ArrayList<>();
-        for (Carriage carriage : trainRoute.getCarriages()) {
-            if (getAvailablePlaces(carriage, trainRoute, from, to).isEmpty()) {
-                continue;
-            }
-            carriages.add(carriage);
-        }
-        return carriages;
-    }
-
-    private List<Integer> getAvailablePlaces(Carriage carriage, TrainRoute route, String from, String to) {
-        List<TrainStop> personalRoute = subListStop(route.getTrainStops(), from, to);
-        List<Integer> availablePlaces = new ArrayList<>();
-        for (int placeNumber = 1; placeNumber <= carriage.getCapacity(); placeNumber++) {
-            boolean isAvailable = true;
-            for (TrainStop trainStop : personalRoute) {
-                for (Ticket ticket : route.getTickets()) {
-
-                    if ((trainStop.equals(personalRoute.get(0)) && trainStop.equals(ticket.getPersonalRoute().get(ticket.getPersonalRoute().size() - 1))) ||
-                            (trainStop.equals(personalRoute.get(personalRoute.size() - 1)) && trainStop.equals(ticket.getPersonalRoute().get(0)))) {
-                        continue;
-                    }
-                    if (carriage.getId() == ticket.getCarriageId() && placeNumber == ticket.getIdPlace() && ticket.getPersonalRoute().contains(trainStop)) {
-                        isAvailable = false;
-                    }
-                }
-            }
-            if (isAvailable) {
-                availablePlaces.add(placeNumber);
-            }
-        }
-        return availablePlaces;
-    }
-
     void buyTicket(String from, String to, LocalDateTime localDateTime, String firstName, String lastName, TrainRoute trainRoute, Carriage carriage, int placeId) {
-        List<TrainRoute> availableRoutes = findAvailableARoutes(from, to, localDateTime);
+        List<TrainRoute> availableRoutes = getAvailableARoutes(from, to, localDateTime);
         if (availableRoutes.isEmpty() || !availableRoutes.contains(trainRoute)) {
             throw new RuntimeException("There\'s no available  routes");
         }
@@ -198,7 +211,7 @@ public class UkrRailway {
         if (!getAvailablePlaces(carriage, trainRoute, from, to).contains(placeId)) {
             throw new RuntimeException("There\'s no available  such place");
         }
-        List<TrainStop> trainStop = subListStop(trainRoute.getTrainStops(),from,to);
+        List<TrainStop> trainStop = subListStop(trainRoute.getTrainStops(), from, to);
         trainRoute.getTickets().add(new Ticket(
                 localDateTime,
                 firstName,
@@ -208,5 +221,19 @@ public class UkrRailway {
                 placeId,
                 trainStop
         ));
+    }
+
+    void buyTicket(Ticket ticket) {
+        TrainRoute trainRoute = getTrainRouteById(ticket.getTrainRouteId());
+        Carriage carriage = getCarriageById(trainRoute,ticket.getCarriageId());
+        buyTicket(ticket.getPersonalRoute().get(0).getStationName(),
+                ticket.getPersonalRoute().get(ticket.getPersonalRoute().size() - 1).getStationName(),
+                ticket.getPersonalRoute().get(0).getDepartureTime(),
+                ticket.getFirstName(),
+                ticket.getLastName(),
+                trainRoute,
+                carriage,
+                ticket.getIdPlace()
+                );
     }
 }
