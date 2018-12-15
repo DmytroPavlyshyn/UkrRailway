@@ -2,9 +2,11 @@ package com.alpha;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
+import java.util.Objects;
 
 public class Ticket {
+    Object object;
+
     private LocalDateTime date;
     private String firstName;
     private String lastName;
@@ -12,6 +14,7 @@ public class Ticket {
     private int carriageId;
     private int idPlace;
     private List<TrainStop> personalRoute;
+
 
     public Ticket(LocalDateTime date, String firstName, String lastName, int trainId, int carriageId, int idPlace, List<TrainStop> personalRoute) {
         this.date = date;
@@ -92,4 +95,23 @@ public class Ticket {
                 "}\n";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Ticket)) return false;
+        Ticket ticket = (Ticket) o;
+        return getTrainId() == ticket.getTrainId() &&
+                getCarriageId() == ticket.getCarriageId() &&
+                getIdPlace() == ticket.getIdPlace() &&
+                Objects.equals(object, ticket.object) &&
+                Objects.equals(getDate(), ticket.getDate()) &&
+                Objects.equals(getFirstName(), ticket.getFirstName()) &&
+                Objects.equals(getLastName(), ticket.getLastName()) &&
+                Objects.equals(getPersonalRoute(), ticket.getPersonalRoute());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(object, getDate(), getFirstName(), getLastName(), getTrainId(), getCarriageId(), getIdPlace(), getPersonalRoute());
+    }
 }

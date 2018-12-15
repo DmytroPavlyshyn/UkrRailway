@@ -2,9 +2,13 @@ package com.alpha;
 
 public enum CarriageType {
     SV(4), COMPARATMENT(45), COUCHETTE(34);
-    private int capapcity;
+    private int capacity;
     CarriageType(int capapcity) {
-        this.capapcity = capapcity;
+        this.capacity = capapcity;
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 
     public static void main(String[] args) {

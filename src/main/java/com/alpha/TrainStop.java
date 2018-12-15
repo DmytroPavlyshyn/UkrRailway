@@ -1,7 +1,6 @@
 package com.alpha;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -28,7 +27,7 @@ public class TrainStop {
         return departureTime;
     }
 
-    static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
+   public static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
         for (TrainStop trainStop : trainStops) {
             if (trainStop.getStationName().equals(stopName)) {
                 return trainStop;

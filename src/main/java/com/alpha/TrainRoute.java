@@ -9,6 +9,9 @@ public class TrainRoute {
     private List<TrainStop> trainStops;
     private List<Ticket> tickets = new ArrayList<>();
 
+    public TrainRoute() {
+    }
+
     public TrainRoute(int id, List<Carriage> carriages, List<TrainStop> trainStops) {
         this.id = id;
         this.carriages = carriages;
@@ -67,13 +70,29 @@ public class TrainRoute {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TrainRoute)) return false;
+        TrainRoute that = (TrainRoute) o;
+        return getId() == that.getId() &&
+                Objects.equals(getCarriages(), that.getCarriages()) &&
+                Objects.equals(getTrainStops(), that.getTrainStops()) &&
+                Objects.equals(getTickets(), that.getTickets());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getCarriages(), getTrainStops(), getTickets());
+    }
+
+    @Override
     public String toString() {
         return "\nTrainRoute{" +
                 "id=" + id +
                 ", carriages=" + carriages +
                 ", trainStops=" + trainStops +
                 ", tickets=" + tickets +
-                '}';
+                "}\n";
     }
 }
 

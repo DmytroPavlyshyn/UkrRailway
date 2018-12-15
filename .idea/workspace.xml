@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6997d70d-009e-4e7d-b0a8-a136ca9cdac9" name="Default Changelist" comment="replace Date to LocalDateTime">
+    <list default="true" id="6997d70d-009e-4e7d-b0a8-a136ca9cdac9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/alpha/TraineRouteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Train.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Carriage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Carriage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/CarriageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/CarriageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Demo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/TrainRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainStop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/TrainStop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,13 +37,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/UkrRailway$TraineRouteTest.ic" NAME="TraineRouteTest Coverage Results" MODIFIED="1544802082286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.alpha.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UkrRailway$UkrRailwayTest_testBuyTicket.ic" NAME="UkrRailwayTest.testBuyTicket Coverage Results" MODIFIED="1544871183351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.alpha.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UkrRailway$TrainStopTest.ic" NAME="TrainStopTest Coverage Results" MODIFIED="1544782808805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.alpha.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="36" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2516">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,25 +66,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Set.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="24" />
+            <state relative-caret-position="329">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+                <element signature="e#2153#2154#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="386">
+              <caret line="52" column="51" lean-forward="true" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1718#1719#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="172" column="95" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+                <element signature="e#1273#1274#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="method#findAllAvailableARoutes#0;class#UkrRailway#0" />
+                <element signature="method#findShortestRoute#0;class#UkrRailway#0" />
+                <element signature="method#chooseCarriage#0;class#UkrRailway#0" />
+                <element signature="method#choosePlace#0;class#UkrRailway#0" />
+                <element signature="method#getAvailableCarriages#0;class#UkrRailway#0" />
               </folding>
             </state>
           </provider>
@@ -64,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="68" />
+            <state relative-caret-position="448">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,23 +132,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/System.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
+            <state relative-caret-position="-259">
+              <caret line="18" column="116" selection-start-line="18" selection-start-column="116" selection-end-line="18" selection-end-column="116" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1955#1956#0" expanded="true" />
-                <element signature="e#2046#2047#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +159,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,44 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#684#685#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -153,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+            <state relative-caret-position="295">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,6 +207,7 @@
       <find>getPer</find>
       <find>Time</find>
       <find>sub</find>
+      <find>getP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Wagon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainType.java" />
@@ -200,16 +229,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/GeneralRoute.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Station.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Ticket2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Place.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Train.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/TestRunner1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/TestJunit1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/Carriage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/CarriageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/TraineRouteTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java" />
       </list>
     </option>
   </component>
@@ -261,6 +299,32 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="alpha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -269,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544709752765" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544872097492" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -293,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="JUnit.UkrRailwayTest.testBuyTicket">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.alpha.Demo" />
       <module name="UkrRailway" />
@@ -320,8 +384,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UkrRailway" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.alpha.UkrRailway" />
+    <configuration name="TraineRouteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UkrRailway" />
       <extension name="coverage">
         <pattern>
@@ -329,17 +392,51 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.alpha" />
+      <option name="MAIN_CLASS_NAME" value="com.alpha.TraineRouteTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TraineRouteTest.testGeneralCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UkrRailway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alpha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.alpha" />
+      <option name="MAIN_CLASS_NAME" value="com.alpha.TraineRouteTest" />
+      <option name="METHOD_NAME" value="testGeneralCapacity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UkrRailwayTest.testBuyTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UkrRailway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alpha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.alpha" />
+      <option name="MAIN_CLASS_NAME" value="com.alpha.UkrRailwayTest" />
+      <option name="METHOD_NAME" value="testBuyTicket" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UkrRailwayTest.testBuyTicket" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.TraineRouteTest" />
+        <item itemvalue="JUnit.TraineRouteTest.testGeneralCapacity" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.UkrRailway" />
-        <item itemvalue="Application.UkrRailway" />
-        <item itemvalue="Application.UkrRailway" />
       </list>
     </recent_temporary>
   </component>
@@ -382,8 +479,47 @@
       <option name="project" value="LOCAL" />
       <updated>1544653398028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added working prototype">
+      <created>1544709810053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544709810054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TrainStopTest - 2018.12.13 at 23h 10m 19s.xml">
+      <configuration name="TrainStopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrainStopTest - 2018.12.13 at 23h 10m 56s.xml">
+      <configuration name="TrainStopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrainStopTest - 2018.12.13 at 23h 11m 25s.xml">
+      <configuration name="TrainStopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrainStopTest - 2018.12.14 at 12h 20m 05s.xml">
+      <configuration name="TrainStopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrainStopTest - 2018.12.14 at 12h 20m 27s.xml">
+      <configuration name="TrainStopTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TraineRouteTest - 2018.12.14 at 17h 39m 38s.xml">
+      <configuration name="TraineRouteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TraineRouteTest - 2018.12.14 at 17h 41m 19s.xml">
+      <configuration name="TraineRouteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TraineRouteTest - 2018.12.14 at 17h 41m 36s.xml">
+      <configuration name="TraineRouteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest_testBuyTicket - 2018.12.15 at 12h 38m 35s.xml">
+      <configuration name="UkrRailwayTest.testBuyTicket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest_testBuyTicket - 2018.12.15 at 12h 53m 53s.xml">
+      <configuration name="UkrRailwayTest.testBuyTicket" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,7 +534,7 @@
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16845638" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13422818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -408,14 +544,14 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.8640227" />
-      <window_info anchor="bottom" id="Debug" order="2" visible="true" weight="0.04957507" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.51983005" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.068767905" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -425,9 +561,10 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.14563759" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13422818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.044966444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -436,11 +573,11 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.07648725" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.8640227" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.48725212" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.1855524" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.0878187" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
@@ -454,6 +591,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.026174497" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
@@ -461,28 +599,37 @@
     <MESSAGE value="bugs fixed" />
     <MESSAGE value="bug fixed" />
     <MESSAGE value="added method for buying ticket for particular route" />
-    <option name="LAST_COMMIT_MESSAGE" value="added method for buying ticket for particular route" />
+    <MESSAGE value="added working prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="added working prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java</url>
+          <line>30</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java</url>
-          <line>10</line>
+          <line>63</line>
           <properties />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java</url>
-          <line>54</line>
+          <line>191</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java</url>
+          <line>8</line>
+          <properties class="com.alpha.TrainRouteRandomizer" method="rendomize">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -508,13 +655,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStopNames.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/LocalDateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="1818" column="15" selection-start-line="1818" selection-start-column="15" selection-end-line="1818" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,13 +668,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Place.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -556,57 +689,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Train.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Train.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="164">
+          <caret line="535" column="46" selection-start-line="535" selection-start-column="46" selection-end-line="535" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TestRunner1.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TestJunit1.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22541">
+          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="387" selection-start-line="387" selection-end-line="387" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/CarriageTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TraineRouteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -615,54 +780,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#2046#2047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="172" column="95" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="method#findAllAvailableARoutes#0;class#UkrRailway#0" />
+            <element signature="method#findShortestRoute#0;class#UkrRailway#0" />
+            <element signature="method#chooseCarriage#0;class#UkrRailway#0" />
+            <element signature="method#choosePlace#0;class#UkrRailway#0" />
+            <element signature="method#getAvailableCarriages#0;class#UkrRailway#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="329">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
             <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
             <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="-259">
+          <caret line="18" column="116" selection-start-line="18" selection-start-column="116" selection-end-line="18" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="52" column="51" lean-forward="true" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
