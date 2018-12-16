@@ -1,7 +1,9 @@
 package com.alpha;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class TrainRoute {
     private int id;

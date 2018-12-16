@@ -1,7 +1,9 @@
 package com.alpha;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Demo { //якщо тут запускати то треба вводити все вручну
     static Scanner scanner = new Scanner(System.in);

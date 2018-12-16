@@ -2,9 +2,11 @@ package com.alpha;
 
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-import static com.alpha.TrainStop.*;
+import static com.alpha.TrainStop.subListStop;
 
 public class UkrRailway {
     static Scanner scanner = new Scanner(System.in);
