@@ -15,7 +15,7 @@ public class TrainStop {
         this.departureTime = departureTime;
     }
 
-    public static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
+    static TrainStop findTrainStopByName(List<TrainStop> trainStops, String stopName) {
         for (TrainStop trainStop : trainStops) {
             if (trainStop.getStationName().equals(stopName)) {
                 return trainStop;
@@ -24,7 +24,7 @@ public class TrainStop {
         return null;
     }
 
-    static List<TrainStop> subListStop(List<TrainStop> trains, String from, String to) {
+    static List<TrainStop> subListOfStops(List<TrainStop> trains, String from, String to) {
         TrainStop fromTrainStop = findTrainStopByName(trains, from);
         TrainStop toTrainStop = findTrainStopByName(trains, to);
         if (fromTrainStop == null || toTrainStop == null) {

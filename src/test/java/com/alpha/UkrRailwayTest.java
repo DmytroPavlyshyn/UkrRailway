@@ -40,7 +40,7 @@ public class UkrRailwayTest {
             add(new Carriage(2, CarriageType.SV));
 
         }}, trainStops1));
-        trainRoutes.add(new TrainRoute(1, new ArrayList<Carriage>() {{
+        trainRoutes.add(new TrainRoute(2, new ArrayList<Carriage>() {{
             add(new Carriage(1, CarriageType.SV));
             add(new Carriage(2, CarriageType.SV));
 
@@ -89,16 +89,34 @@ public class UkrRailwayTest {
         ukrRailway.buyTicket(tickets.get(5));
         Assert.assertEquals(trainRoute.getTickets().get(1), tickets.get(5));
     }
-
+    @Test
+    public void testBuyTicketNoAvailableRoutes() {
+        boolean wasExceptiomThrown = false;
+        ukrRailway.buyTicket(tickets.get(2));
+        ukrRailway.buyTicket(tickets.get(0));
+        ukrRailway.buyTicket(tickets.get(1));
+        ukrRailway.buyTicket(tickets.get(4));
+        ukrRailway.buyTicket(tickets.get(3));
+        ukrRailway.buyTicket(tickets.get(6));
+        ukrRailway.buyTicket(tickets.get(5));
+        ukrRailway.buyTicket(tickets.get(7));
+        List<Carriage> carriages = ukrRailway.getTrainRoutes().get(0).getCarriages();
+        carriages.remove(carriages.get(1));
+        List<TrainRoute> trainRoutes = ukrRailway.getTrainRoutes();
+        trainRoutes.remove(trainRoutes.get(1));
+        try {
+            ukrRailway.buyTicket(tickets.get(0));
+        }catch (RuntimeException e){
+            wasExceptiomThrown = true;
+        }
+        Assert.assertTrue(wasExceptiomThrown);
+    }
     @Test
     public void testGetAvailableRoutesIsNotEmpty() {
         Assert.assertTrue(ukrRailway.getAvailableRoutes(cities[0],
-                cities[3], tickets.get(7).getPersonalRoute().get(0).getDepartureTime()).contains(trainRoute));
+                cities[3], tickets.get(7).getPersonalStops().get(0).getDepartureTime()).contains(trainRoute));
     }
-    @Test
-    public void testGetShortestRoute(){
-        Assert.assertEquals(ukrRailway.getTrainRoutes().get(1),ukrRailway.getShortestRoute(cities[0],cities[3],tickets.get(7).getPersonalRoute().get(0).getDepartureTime()));
-    }
+
     @Test
     public void testGetAvailableRoutesIsEmpty() {
         ukrRailway.buyTicket(tickets.get(2));
@@ -113,9 +131,61 @@ public class UkrRailwayTest {
         carriages.remove(carriages.get(1));
         List<TrainRoute> trainRoutes = ukrRailway.getTrainRoutes();
         trainRoutes.remove(trainRoutes.get(1));
-        Assert.assertTrue(ukrRailway.getAvailableRoutes(cities[0], cities[3], tickets.get(7).getPersonalRoute().get(0).getDepartureTime()).isEmpty());
+        Assert.assertTrue(ukrRailway.getAvailableRoutes(cities[0], cities[3], tickets.get(7).getPersonalStops().get(0).getDepartureTime()).isEmpty());
     }
 
+    @Test
+    public void testGetShortestRoute() {
+        Assert.assertEquals(ukrRailway.getTrainRoutes().get(1), ukrRailway.getShortestRoute(cities[0], cities[3], tickets.get(7).getPersonalStops().get(0).getDepartureTime()));
+    }
+
+    @Test
+    public void testGetAvailableCarriagesIsNotEmpty() {
+        Assert.assertEquals(ukrRailway.getAvailableCarriages(trainRoute, "Lviv", "Kyiv"), ukrRailway.getTrainRoutes().get(0).getCarriages());
+    }
+    @Test
+    public void testGetAvailableCarriagesIsEmpty() {
+        ukrRailway.buyTicket(tickets.get(2));
+        ukrRailway.buyTicket(tickets.get(0));
+        ukrRailway.buyTicket(tickets.get(1));
+        ukrRailway.buyTicket(tickets.get(4));
+        ukrRailway.buyTicket(tickets.get(3));
+        ukrRailway.buyTicket(tickets.get(6));
+        ukrRailway.buyTicket(tickets.get(5));
+        ukrRailway.buyTicket(tickets.get(7));
+        List<Carriage> carriages = ukrRailway.getTrainRoutes().get(0).getCarriages();
+        carriages.remove(carriages.get(1));
+        Assert.assertTrue(ukrRailway.getAvailableCarriages(trainRoute,"Lviv","Kyiv").isEmpty());
+
+    }
+
+    @Test
+    public void testGetAvailablePlacesIsNotEmpty(){
+        Assert.assertTrue(!ukrRailway.getAvailablePlaces(ukrRailway.getTrainRoutes().get(0).getCarriages().get(0),trainRoute,"Lviv","Kyiv").isEmpty());
+    }
+    @Test
+    public void testGetAvailablePlacesIsEmpty(){
+        ukrRailway.buyTicket(tickets.get(2));
+        ukrRailway.buyTicket(tickets.get(0));
+        ukrRailway.buyTicket(tickets.get(1));
+        ukrRailway.buyTicket(tickets.get(4));
+        ukrRailway.buyTicket(tickets.get(3));
+        ukrRailway.buyTicket(tickets.get(6));
+        ukrRailway.buyTicket(tickets.get(5));
+        ukrRailway.buyTicket(tickets.get(7));
+        List<Carriage> carriages = ukrRailway.getTrainRoutes().get(0).getCarriages();
+        carriages.remove(carriages.get(1));
+        Assert.assertTrue(ukrRailway.getAvailablePlaces(ukrRailway.getTrainRoutes().get(0).getCarriages().get(0),trainRoute,"Lviv","Kyiv").isEmpty());
+    }
+
+    @Test
+    public  void testGetTrainRouteById(){
+        Assert.assertEquals(ukrRailway.getTrainRouteById(2),ukrRailway.getTrainRoutes().get(1));
+    }
+    @Test
+    public  void testGetTrainCarriageById(){
+        Assert.assertEquals(ukrRailway.getCarriageById(trainRoute,1),ukrRailway.getTrainRoutes().get(0).getCarriages().get(0));
+    }
     public List<Ticket> generateTickets() {
         List<Ticket> tickets = new ArrayList<>();
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 1, 0),
@@ -124,21 +194,21 @@ public class UkrRailwayTest {
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 1,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[0], cities[1])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[0], cities[1])));
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 3, 0),
                 "f2",
                 "l2",
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 1,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[1], cities[2])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[1], cities[2])));
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 5, 0),
                 "f3",
                 "l3",
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 1,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[2], cities[3])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[2], cities[3])));
 
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 1, 0),
                 "f4",
@@ -146,14 +216,14 @@ public class UkrRailwayTest {
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 2,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[0], cities[2])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[0], cities[2])));
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 5, 0),
                 "f5",
                 "l5",
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 2,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[2], cities[3])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[2], cities[3])));
 
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 1, 0),
                 "f6",
@@ -161,14 +231,14 @@ public class UkrRailwayTest {
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 3,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[0], cities[1])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[0], cities[1])));
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 5, 0),
                 "f7",
                 "l7",
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 3,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[1], cities[3])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[1], cities[3])));
 
         tickets.add(new Ticket(LocalDateTime.of(2018, 12, 6, 1, 0),
                 "f8",
@@ -176,7 +246,7 @@ public class UkrRailwayTest {
                 trainRoute.getId(),
                 trainRoute.getCarriages().get(0).getId(),
                 4,
-                TrainStop.subListStop(trainRoute.getTrainStops(), cities[0], cities[3])));
+                TrainStop.subListOfStops(trainRoute.getTrainStops(), cities[0], cities[3])));
 
         return tickets;
     }
