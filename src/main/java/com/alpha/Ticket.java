@@ -1,11 +1,9 @@
 package com.alpha;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Objects;
 
 public class Ticket {
-    Object object;
 
     private LocalDateTime date;
     private String firstName;
@@ -13,65 +11,64 @@ public class Ticket {
     private int trainRouteId;
     private int carriageId;
     private int idPlace;
-    private List<TrainStop> personalStops;
+    private TrainStop start;
+    private TrainStop end;
 
-
-    public Ticket(LocalDateTime date, String firstName, String lastName, int trainRouteId, int carriageId, int idPlace, List<TrainStop> personalStops) {
+    public Ticket(LocalDateTime date, String firstName, String lastName, int trainRouteId, int carriageId, int idPlace, TrainStop start, TrainStop end) {
         this.date = date;
         this.firstName = firstName;
         this.lastName = lastName;
         this.trainRouteId = trainRouteId;
         this.carriageId = carriageId;
         this.idPlace = idPlace;
-        this.personalStops = personalStops;
+        this.start = start;
+        this.end = end;
     }
 
     public LocalDateTime getDate() {
         return date;
     }
 
-
     public String getFirstName() {
         return firstName;
     }
-
 
     public String getLastName() {
         return lastName;
     }
 
-
     public int getTrainRouteId() {
         return trainRouteId;
     }
-
 
     public int getCarriageId() {
         return carriageId;
     }
 
-
     public int getIdPlace() {
         return idPlace;
     }
 
-
-    public List<TrainStop> getPersonalStops() {
-        return personalStops;
+    public TrainStop getStart() {
+        return start;
     }
 
+    public TrainStop getEnd() {
+        return end;
+    }
 
     @Override
     public String toString() {
-        return "Ticket{" +
-                "date=" + date +
-                ", \nfirstName='" + firstName + '\'' +
-                ", \nlastName='" + lastName + '\'' +
-                ", \ntrainRouteId=" + trainRouteId +
-                ", \ncarriageId=" + carriageId +
-                ", \nidPlace=" + idPlace +
-                ", \npersonalStops=" + personalStops +
-                "}\n";
+        return "\nTicket{" +
+                "\ndate=" + date +
+                ",\nfirstName='" + firstName + '\'' +
+                ",\nlastName='" + lastName + '\'' +
+                ",\ntrainRouteId=" + trainRouteId +
+                ",\ncarriageId=" + carriageId +
+                ",\nidPlace=" + idPlace +
+                ",\nstart=" + start +
+                ",\nend=" + end +
+                "\n}";
     }
 
     @Override
@@ -82,15 +79,15 @@ public class Ticket {
         return getTrainRouteId() == ticket.getTrainRouteId() &&
                 getCarriageId() == ticket.getCarriageId() &&
                 getIdPlace() == ticket.getIdPlace() &&
-                Objects.equals(object, ticket.object) &&
-                Objects.equals(getDate(), ticket.getDate()) &&
-                Objects.equals(getFirstName(), ticket.getFirstName()) &&
-                Objects.equals(getLastName(), ticket.getLastName()) &&
-                Objects.equals(getPersonalStops(), ticket.getPersonalStops());
+                getDate().equals(ticket.getDate()) &&
+                getFirstName().equals(ticket.getFirstName()) &&
+                getLastName().equals(ticket.getLastName()) &&
+                getStart().equals(ticket.getStart()) &&
+                getEnd().equals(ticket.getEnd());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(object, getDate(), getFirstName(), getLastName(), getTrainRouteId(), getCarriageId(), getIdPlace(), getPersonalStops());
+        return Objects.hash(getDate(), getFirstName(), getLastName(), getTrainRouteId(), getCarriageId(), getIdPlace(), getStart(), getEnd());
     }
 }

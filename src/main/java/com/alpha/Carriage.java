@@ -7,7 +7,7 @@ public class Carriage {
     private int id;
     private CarriageType carriageType;
 
-    public Carriage(int id, CarriageType carriageType /*int capacity*/) {
+    public Carriage(int id, CarriageType carriageType) {
         this.id = id;
         this.carriageType = carriageType;
     }

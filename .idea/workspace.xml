@@ -2,28 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d22a4b3-3f77-42ab-8029-4c92fc7c5755" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Test.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailwayForUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UkrRailway.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/alpha/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Carriage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Carriage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/CarriageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/CarriageType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/TrainRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainStop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alpha/TrainStop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Carriage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/CarriageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Demo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Demo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainRouteRandomizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/TrainStop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alpha/UkrRailway.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/TrainStopTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/TraineRouteTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/UkrRailwayTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/UkrRailwayTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/UkrRailwayTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/UkrRailwayTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/alpha/UkrRailwayTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,101 +42,72 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/UkrRailway$UkrRailwayTest.ic" NAME="UkrRailwayTest Coverage Results" MODIFIED="1544986080028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/UkrRailway$UkrRailwayTest.ic" NAME="UkrRailwayTest Coverage Results" MODIFIED="1545121750900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.alpha.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/UkrRailway$com_alpha_in_UkrRailway.ic" NAME="com.alpha in UkrRailway Coverage Results" MODIFIED="1544984619613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/UkrRailway2$com_alpha_in_UkrRailway.ic" NAME="com.alpha in UkrRailway Coverage Results" MODIFIED="1545156344791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.alpha.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/UkrRailway$com_alpha_in_UkrRailway.ic" NAME="com.alpha in UkrRailway Coverage Results" MODIFIED="1545053495588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.alpha.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UkrRailway2$UkrRailwayTest.ic" NAME="UkrRailwayTest Coverage Results" MODIFIED="1545151836256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.alpha.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UkrRailway2$All_in_UkrRailway.ic" NAME="All in UkrRailway Coverage Results" MODIFIED="1545157082448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="145" />
+    <option name="myElementSize" value="15" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.64867043">
+    <splitter split-orientation="horizontal" split-proportion="0.8680556">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2482">
-                  <caret line="157" column="18" lean-forward="true" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TraineRouteTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1037">
-                  <caret line="186" column="125" selection-start-line="186" selection-start-column="125" selection-end-line="186" selection-end-column="125" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
                   <folding>
-                    <element signature="method#generateTrainRoutes#0;class#UkrRailwayTest#0" />
-                    <element signature="initializer##0;class#511:1002" />
-                    <element signature="method#testBuyTicketAllRoute#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testBuyTicketBetweenTwoTicketsRouts#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testBuyTicketInEndOfRoute#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testBuyTicketInStartOfRoute#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testBuyTicketNoAvailableRoutes#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetAvailableRoutesIsNotEmpty#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetAvailableRoutesIsEmpty#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetShortestRoute#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetAvailableCarriagesIsEmpty#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetAvailablePlacesIsNotEmpty#0;class#UkrRailwayTest#0" />
-                    <element signature="method#testGetAvailablePlacesIsEmpty#0;class#UkrRailwayTest#0" />
-                    <element signature="method#generateTickets#0;class#UkrRailwayTest#0" />
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#356#357#0" expanded="true" />
+                    <element signature="e#402#403#0" expanded="true" />
+                    <element signature="e#986#987#0" expanded="true" />
+                    <element signature="e#1033#1034#0" expanded="true" />
+                    <marker date="1545158010837" expanded="true" signature="6062:6063" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailwayForUser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="29">
-                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                <state relative-caret-position="272">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#299#300#0" expanded="true" />
+                    <element signature="e#343#344#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="318">
+                  <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
                   <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
@@ -137,12 +116,66 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+                <state>
+                  <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#703#704#0" expanded="true" />
+                    <element signature="e#762#763#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1289#1290#0" expanded="true" />
+                    <element signature="e#1323#1324#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -153,12 +186,12 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailwayForUser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="474">
-                  <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+                <state relative-caret-position="-8">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                   <folding>
-                    <element signature="method#testFindTrainStopByName#0;class#TrainStopTest#0" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -178,6 +211,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>byId</find>
+      <find>personalR</find>
+      <find>ticket.getTr</find>
+      <find>ticket.get</find>
+      <find>ticket.getPersonalS</find>
+      <find>cities</find>
+      <find>choose</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,94 +228,111 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Ticket2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/alpha/ForUser.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="195" />
-    <option name="y" value="-25" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="y" value="50" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="UkrRailway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UkrRailway" type="462c0819:PsiDirectoryNode" />
+              <item name="UkrRailway2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UkrRailway2" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544987994744" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545158558445" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alpha" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\UkrRailway\src\test\java\com\alpha" />
       <recent name="E:\UkrRailway\src\main\java\com\alpha" />
@@ -294,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UkrRailwayTest">
+  <component name="RunManager" selected="Application.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.alpha.Demo" />
       <module name="UkrRailway" />
@@ -308,7 +364,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainStopTest.testFindTrainStopByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UkrRailwayForUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alpha.UkrRailwayForUser" />
       <module name="UkrRailway" />
       <extension name="coverage">
         <pattern>
@@ -316,26 +373,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.alpha" />
-      <option name="MAIN_CLASS_NAME" value="com.alpha.TrainStopTest" />
-      <option name="METHOD_NAME" value="testFindTrainStopByName" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainStopTest.testSubListOfStops" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in UkrRailway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UkrRailway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.alpha.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.alpha" />
-      <option name="MAIN_CLASS_NAME" value="com.alpha.TrainStopTest" />
-      <option name="METHOD_NAME" value="testSubListOfStops" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,7 +399,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UkrRailwayTest.testGetTrainCarriageById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.alpha in UkrRailway" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UkrRailway" />
       <extension name="coverage">
         <pattern>
@@ -363,20 +408,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.alpha" />
-      <option name="MAIN_CLASS_NAME" value="com.alpha.UkrRailwayTest" />
-      <option name="METHOD_NAME" value="testGetTrainCarriageById" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UkrRailwayTest" />
-        <item itemvalue="JUnit.UkrRailwayTest.testGetTrainCarriageById" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="JUnit.TrainStopTest.testSubListOfStops" />
-        <item itemvalue="JUnit.TrainStopTest.testFindTrainStopByName" />
+        <item itemvalue="JUnit.All in UkrRailway" />
+        <item itemvalue="Application.UkrRailwayForUser" />
+        <item itemvalue="JUnit.UkrRailwayTest" />
+        <item itemvalue="JUnit.com.alpha in UkrRailway" />
       </list>
     </recent_temporary>
   </component>
@@ -402,42 +445,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="com_alpha_in_UkrRailway - 2018.12.16 at 20h 23m 57s.xml">
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 03m 08s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 05m 08s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 05m 33s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 06m 39s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 06m 53s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 07m 04s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UkrRailwayTest - 2018.12.18 at 19h 22m 02s.xml">
+      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_alpha_in_UkrRailway - 2018.12.18 at 19h 32m 55s.xml">
       <configuration name="com.alpha in UkrRailway" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UkrRailwayTest_testGetTrainRouteById - 2018.12.16 at 20h 28m 31s.xml">
-      <configuration name="UkrRailwayTest.testGetTrainRouteById" configurationId="JUnit" />
+    <history-entry file="com_alpha_in_UkrRailway - 2018.12.18 at 20h 06m 25s.xml">
+      <configuration name="com.alpha in UkrRailway" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UkrRailwayTest_testGetTrainRouteById - 2018.12.16 at 20h 30m 41s.xml">
-      <configuration name="UkrRailwayTest.testGetTrainRouteById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UkrRailwayTest - 2018.12.16 at 20h 31m 17s.xml">
-      <configuration name="UkrRailwayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrainStopTest_testFindTrainStopByName - 2018.12.16 at 20h 39m 26s.xml">
-      <configuration name="TrainStopTest.testFindTrainStopByName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrainStopTest_testSubListOfStops - 2018.12.16 at 20h 43m 06s.xml">
-      <configuration name="TrainStopTest.testSubListOfStops" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrainStopTest_testSubListOfStops - 2018.12.16 at 20h 44m 20s.xml">
-      <configuration name="TrainStopTest.testSubListOfStops" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UkrRailwayTest_testGetTrainCarriageById - 2018.12.16 at 20h 47m 52s.xml">
-      <configuration name="UkrRailwayTest.testGetTrainCarriageById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UkrRailwayTest - 2018.12.16 at 20h 47m 57s.xml">
-      <configuration name="UkrRailwayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UkrRailwayTest - 2018.12.16 at 20h 48m 26s.xml">
-      <configuration name="UkrRailwayTest" configurationId="JUnit" />
+    <history-entry file="All_in_UkrRailway - 2018.12.18 at 20h 18m 43s.xml">
+      <configuration name="All in UkrRailway" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -447,16 +490,15 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5240793" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24362606" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3753541" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7832861" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.29127517" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.92351276" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,126 +507,157 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.16308725" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added more tests" />
     <option name="LAST_COMMIT_MESSAGE" value="added more tests" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TestRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UkrRailway.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
+        <state relative-caret-position="68">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TraineRouteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/TrainStopTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="170">
+          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRouteRandomizer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="157" column="18" lean-forward="true" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/alpha/UkrRailwayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="186" column="125" selection-start-line="186" selection-start-column="125" selection-end-line="186" selection-end-column="125" />
+        <state relative-caret-position="284">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
-            <element signature="method#generateTrainRoutes#0;class#UkrRailwayTest#0" />
-            <element signature="initializer##0;class#511:1002" />
-            <element signature="method#testBuyTicketAllRoute#0;class#UkrRailwayTest#0" />
-            <element signature="method#testBuyTicketBetweenTwoTicketsRouts#0;class#UkrRailwayTest#0" />
-            <element signature="method#testBuyTicketInEndOfRoute#0;class#UkrRailwayTest#0" />
-            <element signature="method#testBuyTicketInStartOfRoute#0;class#UkrRailwayTest#0" />
-            <element signature="method#testBuyTicketNoAvailableRoutes#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetAvailableRoutesIsNotEmpty#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetAvailableRoutesIsEmpty#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetShortestRoute#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetAvailableCarriagesIsEmpty#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetAvailablePlacesIsNotEmpty#0;class#UkrRailwayTest#0" />
-            <element signature="method#testGetAvailablePlacesIsEmpty#0;class#UkrRailwayTest#0" />
-            <element signature="method#generateTickets#0;class#UkrRailwayTest#0" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainRoute.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/TrainStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/CarriageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Carriage.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailwayForUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/UkrRailway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <marker date="1545158010837" expanded="true" signature="6062:6063" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/alpha/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

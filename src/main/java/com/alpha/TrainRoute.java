@@ -24,24 +24,9 @@ public class TrainRoute {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public List<Carriage> getCarriages() {
         return carriages;
-    }
-
-    public void setCarriages(List<Carriage> carriages) {
-        this.carriages = carriages;
-    }
-
-    public void setTrainStops(List<TrainStop> trainStops) {
-        this.trainStops = trainStops;
-    }
-
-    public void setTickets(List<Ticket> tickets) {
-        this.tickets = tickets;
     }
 
     public LocalDateTime getDepatureDate() {

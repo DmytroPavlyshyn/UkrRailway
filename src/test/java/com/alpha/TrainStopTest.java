@@ -18,9 +18,7 @@ public class TrainStopTest {
 
     @Before
     public void setUp() {
-
         trainStop = new TrainStop("Lviv", LocalDateTime.now(), LocalDateTime.now().plusMinutes(15));
-
         trainStops = new ArrayList<>();
         trainStops.add(new TrainStop("Lviv", LocalDateTime.now(), LocalDateTime.now().plusMinutes(15)));
         trainStops.add(new TrainStop("Brody", LocalDateTime.now(), LocalDateTime.now().plusMinutes(15)));

@@ -11,7 +11,5 @@ public enum CarriageType {
         return capacity;
     }
 
-    public static void main(String[] args) {
-        CarriageType.SV.name();
-    }
+
 }

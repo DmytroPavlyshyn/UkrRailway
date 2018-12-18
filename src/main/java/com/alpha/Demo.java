@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Demo { //якщо тут запускати то треба вводити все вручну
+public class Demo {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Demo { //якщо тут запускати то треба вво�
         UkrRailway ukrRailway = new UkrRailway(Arrays.asList(new TrainRoute(1, new ArrayList<Carriage>() {{
             add(new Carriage(1, CarriageType.SV));
         }}, trainStops)));
-        boolean isEmpty;
+        UkrRailwayForUser ukrRailwayForUser = new UkrRailwayForUser(ukrRailway);
         while (true) {
             try {
                 ukrRailway.showRoutes();
@@ -44,13 +44,11 @@ public class Demo { //якщо тут запускати то треба вво�
                 System.out.println("Enter last name: ");
                 String lastName = scanner.nextLine();
                 System.out.println(ukrRailway.getShortestRoute(from, to, LocalDateTime.of(2018, month, day, hour, 0)));
-                ukrRailway.buyTicket(from, to, LocalDateTime.of(2018, month, day, hour, 0), firstName, lastName);
-
+                ukrRailwayForUser.buyTicket(from, to, LocalDateTime.of(2018, month, day, hour, 0), firstName, lastName);
             } catch (Exception e) {
                 System.err.println(e);
-            } finally {
-                scanner = new Scanner(System.in);
             }
         }
     }
+
 }
